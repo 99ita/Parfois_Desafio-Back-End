@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9AfuN7rW0HM=",
+  "dgSpecHash": "bm/tdDoAoUs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\eduar\\Desktop\\Parfois\\api\\api.csproj",
+  "projectFilePath": "C:\\Users\\eduar\\Desktop\\Parfois_Desafio-Back-End\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eduar\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.10\\microsoft.aspnetcore.openapi.8.0.10.nupkg.sha512",
     "C:\\Users\\eduar\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.10\\microsoft.entityframeworkcore.8.0.10.nupkg.sha512",

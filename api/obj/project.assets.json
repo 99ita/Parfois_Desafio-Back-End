@@ -1155,11 +1155,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eduar\\Desktop\\Parfois\\api\\api.csproj",
+      "projectUniqueName": "C:\\Users\\eduar\\Desktop\\Parfois_Desafio-Back-End\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\Users\\eduar\\Desktop\\Parfois\\api\\api.csproj",
+      "projectPath": "C:\\Users\\eduar\\Desktop\\Parfois_Desafio-Back-End\\api\\api.csproj",
       "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eduar\\Desktop\\Parfois\\api\\obj\\",
+      "outputPath": "C:\\Users\\eduar\\Desktop\\Parfois_Desafio-Back-End\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config"

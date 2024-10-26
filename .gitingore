@@ -1,5 +1,4 @@
-bin/
-obj/
-*.user
-*.suo
-*.sln.docstates
+/api/bin
+/api/obj
+/api.UnitTests/bin
+/api.UnitTests/obj

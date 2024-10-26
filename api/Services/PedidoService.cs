@@ -28,11 +28,25 @@ namespace api.Services{
             return pedidoDto;
         }
 
-        public async Task UpdatePedidoAsync(PedidoDto pedidoDto){
+        public async Task UpdatePedidoAsync(PedidoDto pedidoDto) {
             var existsPedido = await _pedidoRepository.ExistsAsync(pedidoDto.PedidoId);
             if (!existsPedido) throw new InvalidOperationException($"Pedido with ID {pedidoDto.PedidoId} not found.");
+
             ValidatePedidoDto(pedidoDto);
-            Pedido existingPedido = MapToModel(pedidoDto);
+
+            var existingPedido = await _pedidoRepository.GetByIdAsync(pedidoDto.PedidoId);
+            if (existingPedido == null) throw new InvalidOperationException("Pedido not found");
+
+            existingPedido.Itens.Clear();
+            foreach (var itemDto in pedidoDto.Itens) {
+                existingPedido.Itens.Add(new Item {
+                    Descricao = itemDto.Descricao,
+                    PrecoUnitario = itemDto.PrecoUnitario,
+                    Qtd = itemDto.Qtd,
+                    PedidoId = pedidoDto.PedidoId
+                });
+            }
+
             await _pedidoRepository.UpdateAsync(existingPedido);
         }
 
